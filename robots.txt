@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://digitalheirloom.github.io/tools/sitemap.xml

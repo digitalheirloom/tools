@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Advanced Quran Explorer - Digital Heirloom</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><script type="gdpr-blocker/" async src="https://www.googletagmanager.com/gtag/js?id="></script><script type="gdpr-blocker/">window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				  gtag('config', '' );</script><link rel="stylesheet" href="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://digitalheirloom.github.io/tools/advanced-quran-explorer/"><link rel="alternate" type="application/atom+xml" href="https://digitalheirloom.github.io/tools/feed.xml" title="Digital Heirloom - RSS"><link rel="alternate" type="application/json" href="https://digitalheirloom.github.io/tools/feed.json" title="Digital Heirloom - JSON"><meta property="og:title" content="Advanced Quran Explorer"><meta property="og:site_name" content="Digital Heirloom"><meta property="og:description" content=""><meta property="og:url" content="https://digitalheirloom.github.io/tools/advanced-quran-explorer/"><meta property="og:type" content="article"><link rel="preload" href="https://digitalheirloom.github.io/tools/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://digitalheirloom.github.io/tools/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://digitalheirloom.github.io/tools/assets/css/style.css?v=9ac3045b1a727c7938c187aa0847fb44"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://digitalheirloom.github.io/tools/advanced-quran-explorer/"},"headline":"Advanced Quran Explorer","datePublished":"2025-04-15T18:23+05:00","dateModified":"2025-04-15T18:23+05:00","description":"","author":{"@type":"Person","name":"Muhammad Shoib","url":"https://digitalheirloom.github.io/tools/authors/muhammad-shoib/"},"publisher":{"@type":"Organization","name":"Muhammad Shoib"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><style>.extlink::after {
+				background-color: currentColor;
+				content: "";
+				display: inline-block;
+				height: 16px;
+				margin-left: 5px;
+				position: relative;
+				top: 0px;
+				width: 16px;
+			}
+		
+					.extlink.extlink-icon-1::after {
+						mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'><path d='M15 3h6v6'/><path d='M10 14 21 3'/><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/></svg>");
+						mask-repeat: no-repeat;
+						mask-size: contain;
+					}</style><style>.li{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body class="page-template"><div class="container container--center"><header class="header"><div class="header__logo"><a class="logo" href="https://digitalheirloom.github.io/tools/">Digital Heirloom</a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li class="has-submenu"><span class="is-separator" aria-haspopup="true">Pages</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://digitalheirloom.github.io/tools/about-us/" target="_self">About Us</a></li><li><a href="https://digitalheirloom.github.io/tools/send-feed-back/" target="_self">Feed Back</a></li><li><a href="https://digitalheirloom.github.io/tools/contact-us/" target="_self">Contact Us</a></li></ul></li><li class="active-parent has-submenu"><span class="is-separator" aria-haspopup="true">Tools</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://digitalheirloom.github.io/tools/digital-resource-hub/" target="_self">Search Books</a></li><li><a href="https://digitalheirloom.github.io/tools/search-engine/" target="_self">Search Engine</a></li><li class="active"><a href="https://digitalheirloom.github.io/tools/advanced-quran-explorer/" target="_self">Advanced Quran Explorer</a></li><li><a href="https://digitalheirloom.github.io/tools/search-in-quran/" target="_self">Search In Quran</a></li><li><a href="https://digitalheirloom.github.io/tools/ramadan-and-hajj-countdown/" target="_self">Ramadan &amp; Hajj Countdown</a></li><li><a href="https://digitalheirloom.github.io/tools/prayer-times/" target="_self">Prayer Times</a></li><li><a href="https://digitalheirloom.github.io/tools/to-do/" target="_self">To Do</a></li></ul></li></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Advanced Quran Explorer</h1><div class="post__meta"><time datetime="2025-04-15T18:23" class="post__date">April 15, 2025</time></div></header><div class="post__entry"><p> </p><div class="container"><h1>Dive into the Quran Flawlessly</h1><div class="controls"><label for="translationSelect">Select Translation:</label><select id="translationSelect"></select><br><label for="surahSelect">Select Surah:</label><select id="surahSelect"></select><label for="ayahSelect">Select Ayah:</label><select id="ayahSelect"><option value="">(Full Chapter)</option></select><br><button>Show Ayah</button> <button>Show Full Chapter</button></div><div id="quran-display">Loading Quran content...</div></div><p><script>const apiUrl = "https://api.alquran.cloud/v1";
+    let currentSurah = 1;
+    let currentAyah = ""; // empty means full chapter
+    let currentTranslation = "";
+    
+    const translationSelect = document.getElementById("translationSelect");
+    const surahSelect = document.getElementById("surahSelect");
+    const ayahSelect = document.getElementById("ayahSelect");
+    const quranDisplay = document.getElementById("quran-display");
+
+    // Load all available editions from the API
+    async function loadTranslations() {
+      try {
+        const response = await fetch(`${apiUrl}/edition`);
+        const data = await response.json();
+        
+        // Manually add the Arabic (Uthmani) edition as the first option.
+        const arabicOption = document.createElement("option");
+        arabicOption.value = "quran-uthmani";
+        arabicOption.textContent = "Arabic (Uthmani)";
+        translationSelect.appendChild(arabicOption);
+        
+        // Load translation editions (if you wish to include them too)
+        const translations = data.data.filter(ed => ed.type === "translation" && ed.format === "text");
+        translations.forEach(ed => {
+          const option = document.createElement("option");
+          option.value = ed.identifier;
+          option.setAttribute("data-lang", ed.language);
+          option.textContent = `${ed.englishName} (${ed.language.toUpperCase()})`;
+          translationSelect.appendChild(option);
+        });
+        
+        // Set the default selection to Arabic
+        translationSelect.value = "quran-uthmani";
+        currentTranslation = translationSelect.value;
+      } catch (error) {
+        console.error("Error loading translations:", error);
+        translationSelect.innerHTML = "<option>Error loading translations</option>";
+      }
+    }
+
+    // Load Surah list from API
+    async function loadSurahs() {
+      try {
+        const response = await fetch(`${apiUrl}/surah`);
+        const data = await response.json();
+        surahSelect.innerHTML = "";
+        data.data.forEach(surah => {
+          const option = document.createElement("option");
+          option.value = surah.number;
+          option.textContent = `${surah.number}. ${surah.englishName}`;
+          surahSelect.appendChild(option);
+        });
+        currentSurah = surahSelect.value;
+        loadAyahs(currentSurah);
+        showFullSurah(); // By default, show full chapter of first Surah
+      } catch (error) {
+        quranDisplay.textContent = "Error loading surah list.";
+        console.error(error);
+      }
+    }
+
+    // Load Ayah list for selected Surah
+    async function loadAyahs(surahNumber) {
+      try {
+        const response = await fetch(`${apiUrl}/surah/${surahNumber}`);
+        const data = await response.json();
+        ayahSelect.innerHTML = "<option value=''> (Full Chapter) </option>";
+        for (let i = 1; i <= data.data.numberOfAyahs; i++) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = `Ayah ${i}`;
+          ayahSelect.appendChild(option);
+        }
+        currentAyah = ayahSelect.value;
+      } catch (error) {
+        quranDisplay.textContent = "Error loading ayah list.";
+        console.error(error);
+      }
+    }
+
+    // Show a specific Ayah if one is selected; otherwise, show full chapter
+    async function showAyah() {
+      currentSurah = surahSelect.value;
+      currentAyah = ayahSelect.value;
+      currentTranslation = translationSelect.value;
+      if (currentAyah) {
+        try {
+          const response = await fetch(`${apiUrl}/ayah/${currentSurah}:${currentAyah}/${currentTranslation}`);
+          const data = await response.json();
+          if (data.status === "OK") {
+            quranDisplay.innerHTML = `
+              <div class="ayah">
+                <div class="ayah-ref">Surah ${data.data.surah.englishName} - Ayah ${currentAyah}</div>
+                <div>${data.data.text}</div>
+              </div>
+            `;
+          } else {
+            quranDisplay.textContent = "Verse not found.";
+          }
+        } catch (error) {
+          quranDisplay.textContent = "Error fetching verse.";
+          console.error(error);
+        }
+      } else {
+        showFullSurah();
+      }
+    }
+
+    // Show Full Surah (Chapter)
+    async function showFullSurah() {
+      currentSurah = surahSelect.value;
+      currentTranslation = translationSelect.value;
+      try {
+        const response = await fetch(`${apiUrl}/surah/${currentSurah}/${currentTranslation}`);
+        const data = await response.json();
+        if (data.status === "OK") {
+          let content = `<h2>${data.data.englishName} (Surah ${data.data.number})</h2>`;
+          data.data.ayahs.forEach(ayah => {
+            content += `
+              <div class="ayah">
+                <div class="ayah-ref">Ayah ${ayah.numberInSurah}</div>
+                <div>${ayah.text}</div>
+              </div>
+            `;
+          });
+          quranDisplay.innerHTML = content;
+        } else {
+          quranDisplay.textContent = "Error loading full chapter.";
+        }
+      } catch (error) {
+        quranDisplay.textContent = "Error fetching full chapter.";
+        console.error(error);
+      }
+    }
+
+    // Event Listeners
+    surahSelect.addEventListener("change", () => {
+      loadAyahs(surahSelect.value);
+      quranDisplay.textContent = "";
+    });
+    translationSelect.addEventListener("change", () => {
+      currentTranslation = translationSelect.value;
+      // If an Ayah is selected, update that; otherwise, show full chapter
+      if (ayahSelect.value) {
+        showAyah();
+      } else {
+        showFullSurah();
+      }
+    });
+
+    // Initialize tool by loading translations then surahs
+    async function initialize() {
+      await loadTranslations();
+      await loadSurahs();
+    }
+    initialize();</script></p></div><footer class="wrapper post__footer"><div class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F" class="js-share invert facebook" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#facebook"/></svg> <span>Facebook</span> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F&amp;media=undefined&amp;description=Advanced%20Quran%20Explorer" class="js-share invert pinterest" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#pinterest"/></svg> <span>Pinterest</span> </a><a href="https://mix.com/add?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F" class="js-share invert mix" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#mix"/></svg> <span>Mix</span> </a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F" class="js-share invert linkedin" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#linkedin"/></svg> <span>LinkedIn</span> </a><a href="https://buffer.com/add?text=Advanced%20Quran%20Explorer&amp;url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F" class="js-share invert buffer" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#buffer"/></svg> <span>Buffer</span> </a><a href="https://api.whatsapp.com/send?text=Advanced%20Quran%20Explorer https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fadvanced-quran-explorer%2F" class="js-share invert whatsapp" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#whatsapp"/></svg> <span>WhatsApp</span></a></div></footer></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Made With Love and Open Source For Everyone</p></div></div></footer></div><script defer="defer" src="https://digitalheirloom.github.io/tools/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'overlay',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><script>(function() {
+			var originalTitle = document.title;
+			var timeout;
+			document.addEventListener("visibilitychange", function() {
+				if (document.hidden) {
+					document.title = "👀 We miss you! Come back!";
+				} else {
+					clearTimeout(timeout);
+					document.title = "🎉 Welcome back!";
+							setTimeout(function() {
+								document.title = originalTitle;
+							}, 2000);
+				}
+			});
+		})();</script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/clipboard.min.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-copy-to-clipboard.min.js"></script></body></html>

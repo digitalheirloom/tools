@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Send Feed Back - Digital Heirloom</title><meta name="description" content="Publish Suggestion Tool Submit Suggestion Published Suggestions"><meta name="generator" content="Publii Open-Source CMS for Static Site"><script type="gdpr-blocker/" async src="https://www.googletagmanager.com/gtag/js?id="></script><script type="gdpr-blocker/">window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				  gtag('config', '' );</script><link rel="stylesheet" href="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://digitalheirloom.github.io/tools/send-feed-back/"><link rel="alternate" type="application/atom+xml" href="https://digitalheirloom.github.io/tools/feed.xml" title="Digital Heirloom - RSS"><link rel="alternate" type="application/json" href="https://digitalheirloom.github.io/tools/feed.json" title="Digital Heirloom - JSON"><meta property="og:title" content="Send Feed Back"><meta property="og:site_name" content="Digital Heirloom"><meta property="og:description" content="Publish Suggestion Tool Submit Suggestion Published Suggestions"><meta property="og:url" content="https://digitalheirloom.github.io/tools/send-feed-back/"><meta property="og:type" content="article"><link rel="preload" href="https://digitalheirloom.github.io/tools/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://digitalheirloom.github.io/tools/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://digitalheirloom.github.io/tools/assets/css/style.css?v=9ac3045b1a727c7938c187aa0847fb44"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://digitalheirloom.github.io/tools/send-feed-back/"},"headline":"Send Feed Back","datePublished":"2025-04-15T16:09+05:00","dateModified":"2025-04-15T17:07+05:00","description":"Publish Suggestion Tool Submit Suggestion Published Suggestions","author":{"@type":"Person","name":"Muhammad Shoib","url":"https://digitalheirloom.github.io/tools/authors/muhammad-shoib/"},"publisher":{"@type":"Organization","name":"Muhammad Shoib"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><style>.extlink::after {
+				background-color: currentColor;
+				content: "";
+				display: inline-block;
+				height: 16px;
+				margin-left: 5px;
+				position: relative;
+				top: 0px;
+				width: 16px;
+			}
+		
+					.extlink.extlink-icon-1::after {
+						mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'><path d='M15 3h6v6'/><path d='M10 14 21 3'/><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/></svg>");
+						mask-repeat: no-repeat;
+						mask-size: contain;
+					}</style><style>.li{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body class="page-template"><div class="container container--center"><header class="header"><div class="header__logo"><a class="logo" href="https://digitalheirloom.github.io/tools/">Digital Heirloom</a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li class="active-parent has-submenu"><span class="is-separator" aria-haspopup="true">Pages</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://digitalheirloom.github.io/tools/about-us/" target="_self">About Us</a></li><li class="active"><a href="https://digitalheirloom.github.io/tools/send-feed-back/" target="_self">Feed Back</a></li><li><a href="https://digitalheirloom.github.io/tools/contact-us/" target="_self">Contact Us</a></li></ul></li><li class="has-submenu"><span class="is-separator" aria-haspopup="true">Tools</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://digitalheirloom.github.io/tools/digital-resource-hub/" target="_self">Search Books</a></li><li><a href="https://digitalheirloom.github.io/tools/search-engine/" target="_self">Search Engine</a></li><li><a href="https://digitalheirloom.github.io/tools/advanced-quran-explorer/" target="_self">Advanced Quran Explorer</a></li><li><a href="https://digitalheirloom.github.io/tools/search-in-quran/" target="_self">Search In Quran</a></li><li><a href="https://digitalheirloom.github.io/tools/ramadan-and-hajj-countdown/" target="_self">Ramadan &amp; Hajj Countdown</a></li><li><a href="https://digitalheirloom.github.io/tools/prayer-times/" target="_self">Prayer Times</a></li><li><a href="https://digitalheirloom.github.io/tools/to-do/" target="_self">To Do</a></li></ul></li></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Send Feed Back</h1><div class="post__meta"><time datetime="2025-04-15T16:09" class="post__date">April 15, 2025</time></div></header><div class="post__entry"><div class="outer-box"><div class="container publish-controls"><h1>Publish Suggestion Tool</h1><form id="suggestionForm"><input id="suggestionTitle" required="" type="text" placeholder="Enter suggestion title..."><br><textarea id="suggestionDescription" cols="50" name="description" required="" rows="4" placeholder="Enter your suggestion..."></textarea><br><button type="submit">Submit Suggestion</button></form><div id="publishedSuggestions"><h2>Published Suggestions</h2><div id="suggestionsList"></div></div></div></div><p><script>// Load suggestions from localStorage or start fresh
+		let suggestions = JSON.parse(localStorage.getItem("suggestions")) || [];
+		displaySuggestions();
+
+		// ✅ Your latest Google Apps Script Web App URL:
+		const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw1ICME6A-aJDeh5greKEuj2oiuBD97b1XtzJmojZQxcWQkL-C94bCFafl8Kt4vMWqZhQ/exec";
+
+		// Form submission
+		document.getElementById("suggestionForm").addEventListener("submit", function(e) {
+			e.preventDefault();
+
+			const titleEl = document.getElementById("suggestionTitle");
+			const descEl = document.getElementById("suggestionDescription");
+			const title = titleEl.value.trim();
+			const description = descEl.value.trim();
+
+			if (!title || !description) {
+				alert("Please provide both a title and a description for your suggestion.");
+				return;
+			}
+
+			if (!confirm("Do you want to publish this suggestion?")) {
+				alert("Suggestion not published.");
+				return;
+			}
+
+			const submitButton = this.querySelector("button[type='submit']");
+			submitButton.classList.add("animate-submit");
+			submitButton.addEventListener("animationend", () => {
+				submitButton.classList.remove("animate-submit");
+			}, {
+				once: true
+			});
+
+			const formData = new URLSearchParams();
+			formData.append("title", title);
+			formData.append("description", description);
+
+			fetch(APPS_SCRIPT_URL, {
+					method: "POST",
+					body: formData
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.result === "success") {
+						const newSuggestion = {
+							title: title,
+							description: description,
+							timestamp: new Date().toISOString()
+						};
+						suggestions.push(newSuggestion);
+						localStorage.setItem("suggestions", JSON.stringify(suggestions));
+						displaySuggestions();
+						titleEl.value = "";
+						descEl.value = "";
+						document.getElementById("publishedSuggestions").style.display = "block";
+					} else {
+						alert("Submission error: " + data.error);
+					}
+				})
+				.catch(error => {
+					console.error("Error:", error);
+					alert("There was an error submitting your suggestion.");
+				});
+		});
+
+		function displaySuggestions() {
+			const listDiv = document.getElementById("suggestionsList");
+			listDiv.innerHTML = "";
+			if (suggestions.length === 0) {
+				document.getElementById("publishedSuggestions").style.display = "none";
+				return;
+			}
+			suggestions.forEach(sug => {
+				const sugCard = document.createElement("div");
+				sugCard.className = "result-card";
+				sugCard.innerHTML = `
+          <div class="result-title">${sug.title}</div>
+          <div>${sug.description}</div>
+          <div style="font-size: 12px; color: #555;">
+            Published on: ${new Date(sug.timestamp).toLocaleString()}
+          </div>
+        `;
+				listDiv.appendChild(sugCard);
+			});
+		}</script></p></div><footer class="wrapper post__footer"><div class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F" class="js-share invert facebook" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#facebook"/></svg> <span>Facebook</span> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F&amp;media=undefined&amp;description=Send%20Feed%20Back" class="js-share invert pinterest" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#pinterest"/></svg> <span>Pinterest</span> </a><a href="https://mix.com/add?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F" class="js-share invert mix" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#mix"/></svg> <span>Mix</span> </a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F" class="js-share invert linkedin" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#linkedin"/></svg> <span>LinkedIn</span> </a><a href="https://buffer.com/add?text=Send%20Feed%20Back&amp;url=https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F" class="js-share invert buffer" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#buffer"/></svg> <span>Buffer</span> </a><a href="https://api.whatsapp.com/send?text=Send%20Feed%20Back https%3A%2F%2Fdigitalheirloom.github.io%2Ftools%2Fsend-feed-back%2F" class="js-share invert whatsapp" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://digitalheirloom.github.io/tools/assets/svg/svg-map.svg#whatsapp"/></svg> <span>WhatsApp</span></a></div></footer></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Made With Love and Open Source For Everyone</p></div></div></footer></div><script defer="defer" src="https://digitalheirloom.github.io/tools/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'overlay',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><script>(function() {
+			var originalTitle = document.title;
+			var timeout;
+			document.addEventListener("visibilitychange", function() {
+				if (document.hidden) {
+					document.title = "👀 We miss you! Come back!";
+				} else {
+					clearTimeout(timeout);
+					document.title = "🎉 Welcome back!";
+							setTimeout(function() {
+								document.title = originalTitle;
+							}, 2000);
+				}
+			});
+		})();</script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/clipboard.min.js"></script><script defer="defer" src="https://digitalheirloom.github.io/tools/media/plugins/syntaxHighlighter/prism-copy-to-clipboard.min.js"></script></body></html>
