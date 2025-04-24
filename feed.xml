@@ -3,7 +3,7 @@
     <title>Digital Heirloom</title>
     <link href="https://digitalheirloom.github.io/tools/feed.xml" rel="self" />
     <link href="https://digitalheirloom.github.io/tools" />
-    <updated>2025-04-23T18:08:07+05:00</updated>
+    <updated>2025-04-23T19:01:45+05:00</updated>
     <author>
         <name>Muhammad Shoib</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://digitalheirloom.github.io/tools/surah-al-imran/"/>
         <id>https://digitalheirloom.github.io/tools/surah-al-imran/</id>
+            <category term="Quran"/>
 
         <updated>2025-04-23T18:00:13+05:00</updated>
             <summary>
